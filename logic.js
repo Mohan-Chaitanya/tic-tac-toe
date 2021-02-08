@@ -65,7 +65,7 @@ function finalResult(input) {
     var x = document.getElementById("gameBoard");
     x.style.filter = 'blur(10px)';
     var y = document.getElementById('result');
-    y.innerHTML = input + ' one won this game';
+    y.innerHTML = '"' + input + '" won this game';
 
     x.addEventListener("click", handler, true);
 
