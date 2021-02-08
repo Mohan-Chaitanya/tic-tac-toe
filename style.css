@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 body {
 	color: rgb(159, 219, 199);
 	background-color: rgb(3, 68, 49);
+	font-family: "Courgette", cursive;
 }
 
 h1 {
@@ -10,10 +13,16 @@ h1 {
 	margin: auto;
 }
 
-.playersDiv {
+#playersDiv {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+
+#result {
+	text-align: center;
+	padding: 2rem;
+	font-size: larger;
 }
 
 .playerDiv1 {
@@ -31,27 +40,44 @@ h1 {
 #gameBoard {
 	display: grid;
 	width: fit-content;
-	/* border: 2px solid rgb(153, 143, 49); */
 	grid-template-columns: auto auto auto;
 	margin: auto;
 }
 
 #gameBoard > div {
-	padding: 1rem;
+	width: 40px;
+	height: 40px;
+	padding-left: 2rem;
+	padding-top: 2rem;
 }
 
-.gameCell2,
-.gameCell8 {
+#gameCell2,
+#gameCell8 {
 	border-right: 2px solid rgb(165, 163, 70);
 	border-left: 2px solid rgb(165, 163, 70);
 }
 
-.gameCell5 {
+#gameCell5 {
 	border: 2px solid rgb(165, 163, 70);
 }
 
-.gameCell4,
-.gameCell6 {
+#gameCell4,
+#gameCell6 {
 	border-top: 2px solid rgb(165, 163, 70);
 	border-bottom: 2px solid rgb(165, 163, 70);
+}
+
+#pageRefresh {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	background-color: rgb(165, 163, 70);
+	padding: 0.9rem;
+	border: none;
+	border-radius: 3px;
+}
+
+#pageRefresh:hover {
+	background-color: rgb(217, 243, 235);
 }

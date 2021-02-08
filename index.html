@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>tic-tac-toe</h1>
-    <div class='playersDiv'> 
+    <div id='playersDiv'> 
         <div class="playerDiv1">
             <h3>Player 1</h3>
             <h2>X</h2>
@@ -18,17 +18,19 @@
             <h2>O</h2>
         </div>
     </div>
+    <div id='result'></div>
     <div id="gameBoard">
-        <div id='gameCell' class="gameCell1">X</div>
-        <div id='gameCell' class="gameCell2">X</div>
-        <div id='gameCell' class="gameCell3">X</div>
-        <div id='gameCell' class="gameCell4">X</div>
-        <div id='gameCell' class="gameCell5">X</div>
-        <div id='gameCell' class="gameCell6">X</div>
-        <div id='gameCell' class="gameCell7">X</div>
-        <div id='gameCell' class="gameCell8">X</div>
-        <div id='gameCell' class="gameCell9">X</div>
+        <div id='gameCell1' class="1" onclick="boxElement(1)"></div>
+        <div id='gameCell2' class="2" onclick="boxElement(2)"></div>
+        <div id='gameCell3' class="3" onclick="boxElement(3)"></div>
+        <div id='gameCell4' class="4" onclick="boxElement(4)"></div>
+        <div id='gameCell5' class="5" onclick="boxElement(5)"></div>
+        <div id='gameCell6' class="6" onclick="boxElement(6)"></div>
+        <div id='gameCell7' class="7" onclick="boxElement(7)"></div>
+        <div id='gameCell8' class="8" onclick="boxElement(8)"></div>
+        <div id='gameCell9' class="9" onclick="boxElement(9)"></div>
     </div>
+    <button id='pageRefresh' onclick="refreshPage()">Reset</button>
+    <script src='./logic.js'></script> 
 </body>
-<script src='./logic.js'></script>
 </html>
