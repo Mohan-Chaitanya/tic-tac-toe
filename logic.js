@@ -26,31 +26,31 @@ function boxElement(atr) {
 }
 
 function gamePoint(arr) {
-    if ((arr[0] === arr[1] && arr[1] === arr[2])) {
+    if ((arr[0] === arr[1] && arr[1] === arr[2]) && arr[1] != '') {
         if (arr[0] === 'X') finalResult('X');
         else if (arr[0] === 'O') finalResult('O');
     }
-    if ((arr[3] === arr[4] && arr[4] === arr[5])) {
+    if ((arr[3] === arr[4] && arr[4] === arr[5]) && arr[3] != '') {
         if (arr[3] === 'X') finalResult('X');
         else if (arr[3] === 'O') finalResult('O');
     }
-    if ((arr[6] === arr[7] && arr[7] === arr[8])) {
+    if ((arr[6] === arr[7] && arr[7] === arr[8]) && arr[6] != '') {
         if (arr[6] === 'X') finalResult('X');
         else if (arr[6] === 'O') finalResult('O');
     }
-    if ((arr[0] === arr[3] && arr[3] === arr[6])) {
+    if ((arr[0] === arr[3] && arr[3] === arr[6]) && arr[0] != '') {
         if (arr[0] === 'X') finalResult('X');
         else if (arr[0] === 'O') finalResult('O');
     }
-    if (((arr[1] === arr[4] && arr[4] === arr[7]) && arr[1] != '')) {
+    if ((arr[1] === arr[4] && arr[4] === arr[7]) && arr[1] != '') {
         if (arr[1] === 'X') finalResult('X');
         else if (arr[0] === 'O') finalResult('O');
     }
-    if ((arr[2] === arr[5] && arr[5] === arr[8])) {
+    if ((arr[2] === arr[5] && arr[5] === arr[8]) && arr[2] != '') {
         if (arr[2] === 'X') finalResult('X');
         else if (arr[2] === 'O') finalResult('O');
     }
-    if (((arr[0] === arr[4] && arr[4] === arr[8]))) {
+    if ((arr[0] === arr[4] && arr[4] === arr[8]) && arr[0] != '') {
         if (arr[0] === 'X') finalResult('X');
         else if (arr[0] === 'O') finalResult('O');
     }
