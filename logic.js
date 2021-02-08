@@ -12,12 +12,13 @@ function boxElement(atr) {
     let box = document.getElementById(`gameCell${atr}`);
     if (count % 2 === 0 && box.innerHTML === '') {
         gameBoard[atr - 1] = 'X';
+        count++;
     } else if (box.innerHTML === '') {
         gameBoard[atr - 1] = 'O';
+        count++;
     }
-    count++;
     console.log(count);
-    if (count === 9) {
+    if (count >= 9) {
         drawmatch();
     }
     boardDisplay();
